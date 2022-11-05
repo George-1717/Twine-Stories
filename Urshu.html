@@ -297,7 +297,7 @@ You find this especially strange because there is nothing inside of the log exce
 or
 [[Find the old lady-&gt;Helping old lady in pond]] 
 or
-[[Find the other cat-&gt;Helping John in pond]] </tw-passagedata><tw-passagedata pid="31" name="Lying to Urshu about what happened" tags="" position="1400,2100" size="100,100">You talk to Urshu about what happened.</tw-passagedata><tw-passagedata pid="32" name="Connor&#39;s Home Before Scoring (Day 1 Deciding)" tags="" position="500,2125" size="100,100">Everyone you talk to says that scores are usually finished about three days after your task is done, so you have three whole days to do whatever you want!
+[[Find the other cat-&gt;Helping John in pond]] </tw-passagedata><tw-passagedata pid="31" name="Lying to Urshu about what happened" tags="" position="1400,2100" size="100,100">You talk to Urshu about what happened.</tw-passagedata><tw-passagedata pid="32" name="Connor&#39;s Home Before Scoring (Day 1 Deciding)" tags="" position="500,2125" size="100,100">You go back to your small apartment. Everyone you talk to says that scores are usually finished about three days after your task is done, so you have three whole days to do whatever you want!
 
 [[Take a Swim-&gt;Take a Swim (Day 1)]]
 
@@ -311,7 +311,63 @@ or
 
 </tw-passagedata><tw-passagedata pid="33" name="DeathByGuardChanceYouWin" tags="" position="900,300" size="100,100">(set:_doYouWin to (random:0,69420))(if:_doYouWin is 6969)[You beat the guards and live happily ever after (how the hell did you get this? You had a one in 69420 chance of getting it!)](else:)[(text-color:red)[You die a violent and bloody death, being beaten to a pulp by the guards.]]
 (link: &quot;Restart&quot;)[(restart:)]
-(link: &quot;End&quot;)[(gotourl: &quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="34" name="Take a Swim (Day 1)" tags="" position="375,2250" size="100,100">You swim all day in the compound&#39;s indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pool though.]</tw-passagedata><tw-passagedata pid="35" name="Work out (Day 1)" tags="" position="500,2250" size="100,100"></tw-passagedata><tw-passagedata pid="36" name="Go to the spa (Day 1)" tags="" position="625,2250" size="100,100"></tw-passagedata><tw-passagedata pid="37" name="Read (Day 1)" tags="" position="500,2375" size="100,100"></tw-passagedata></tw-storydata>
+(link: &quot;End&quot;)[(gotourl: &quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="34" name="Take a Swim (Day 1)" tags="" position="375,2250" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
+
+[[Work out-&gt;Work out (Day 2)]]
+
+[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+
+[[Go to the spa-&gt;Go to the spa (Day 2)]]
+
+[[Read-&gt;Read (Day 2)]]</tw-passagedata><tw-passagedata pid="35" name="Work out (Day 1)" tags="" position="500,2250" size="100,100">(if:visits &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but still don&#39;t have enough credits for a membership.]
+
+[[Take a Swim-&gt;Take a Swim (Day 1)]]
+
+[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+
+[[Go to the spa-&gt;Go to the spa (Day 1)]]
+
+[[Read-&gt;Read (Day 1)]]</tw-passagedata><tw-passagedata pid="36" name="Go to the spa (Day 1)" tags="" position="625,2250" size="100,100">You go to the spa, and luckily, they are having a sale, so you are able to afford it.
+You have a great and relaxing day.
+
+[[Take a Swim-&gt;Take a Swim (Day 2)]]
+
+[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+
+[[Read-&gt;Read (Day 2)]]
+
+[[Work out-&gt;Work out (Day 2)]]
+
+</tw-passagedata><tw-passagedata pid="37" name="Read (Day 1)" tags="" position="625,2375" size="100,100">You spend the day going through your pile of books that you&#39;ve wanted to read, but not had the time to.
+
+[[Take a Swim-&gt;Take a Swim (Day 2)]]
+
+[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+
+[[Read more-&gt;Read (Day 2)]]
+
+[[Go to the spa-&gt;Go to the spa (Day 2)]]</tw-passagedata><tw-passagedata pid="38" name="Read (Day 2)" tags="" position="625,2500" size="100,100">(if:(history: where its name contains &quot;Read (Day 1)&quot;)&#39;s length &gt;= 1)[You read even more books, and have a great time.](else:)[You go through your pile of books that you&#39;ve been meaning to read, but haven&#39;t had the time to.]
+
+[[Take a Swim-&gt;Take a Swim (Day 3)]]
+
+[[Work out-&gt;Work out (Day 3)]]
+
+[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+
+[[Go to the spa-&gt;Go to the spa (Day 3)]]
+
+[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="39" name="Take a Swim (Day 2)" tags="" position="375,2500" size="100,100"></tw-passagedata><tw-passagedata pid="40" name="Read (Day 3)" tags="" position="625,2625" size="100,100"></tw-passagedata><tw-passagedata pid="41" name="Go to the spa (Day 3)" tags="" position="375,2625" size="100,100"></tw-passagedata><tw-passagedata pid="42" name="Work out (Day 3)" tags="" position="500,2625" size="100,100"></tw-passagedata><tw-passagedata pid="43" name="Take a Swim (Day 3)" tags="" position="625,2750" size="100,100"></tw-passagedata><tw-passagedata pid="44" name="Go to the spa (Day 2)" tags="" position="500,2375" size="100,100">(if:(history: where its name contains &quot;Go to the spa (Day 1)&quot;)&#39;s length &gt;= 1)[You try to go to the spa, but they call you greedy and kick you out.](else:)[You go to the spa, and luckily, they are having a sale, so you are able to afford it.
+You have a great and relaxing day.]
+
+[[Take a Swim-&gt;Take a Swim (Day 3)]]
+
+[[Work out-&gt;Work out (Day 3)]]
+
+[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+
+[[Go to the spa-&gt;Go to the spa (Day 3)]]
+
+[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="45" name="Work out (Day 2)" tags="" position="375,2375" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _createForOfIteratorHelper(e,t){var n,r="undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(!r){if(Array.isArray(e)||(r=_unsupportedIterableToArray(e))||t&&e&&"number"==typeof e.length)return r&&(e=r),n=0,{s:t=function(){},n:function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}},e:function(e){throw e},f:t};throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var a,o=!0,i=!1;return{s:function(){r=r.call(e)},n:function(){var e=r.next();return o=e.done,e},e:function(e){i=!0,a=e},f:function(){try{o||null==r.return||r.return()}finally{if(i)throw a}}}}function _slicedToArray(e,t){return _arrayWithHoles(e)||_iterableToArrayLimit(e,t)||_unsupportedIterableToArray(e,t)||_nonIterableRest()}function _nonIterableRest(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _iterableToArrayLimit(e,t){var n=null==e?null:"undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null!=n){var r,a,o=[],i=!0,s=!1;try{for(n=n.call(e);!(i=(r=n.next()).done)&&(o.push(r.value),!t||o.length!==t);i=!0);}catch(e){s=!0,a=e}finally{try{i||null==n.return||n.return()}finally{if(s)throw a}}return o}}function _arrayWithHoles(e){if(Array.isArray(e))return e}function _toConsumableArray(e){return _arrayWithoutHoles(e)||_iterableToArray(e)||_unsupportedIterableToArray(e)||_nonIterableSpread()}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _unsupportedIterableToArray(e,t){if(e){if("string"==typeof e)return _arrayLikeToArray(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Map"===(n="Object"===n&&e.constructor?e.constructor.name:n)||"Set"===n?Array.from(e):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?_arrayLikeToArray(e,t):void 0}}function _iterableToArray(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}function _arrayWithoutHoles(e){if(Array.isArray(e))return _arrayLikeToArray(e)}function _arrayLikeToArray(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

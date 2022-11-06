@@ -256,7 +256,7 @@ You bleed to death on the grass.]
 (link: &quot;Restart&quot;)[(restart:)]
 (link: &quot;End&quot;)[(gotourl: &quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="16" name="Hollow log (waiting)" tags="" position="600,1300" size="100,100">(set: $urshucoming to (random:1,7)) (if: $urshucoming is 7)[You hear the sounds of both feet and paws.
 [[Pounce-&gt;Pounce Early]]
-[[Wait a little more-&gt;A lil&#39; bit more waiting]]]
+[[Wait a little more-&gt;A little bit more waiting]]]
 (if:$urshucoming is not 7)[You wait quietly in the hollow log.
 [[Wait more-&gt;Hollow log (waiting)]]]
 </tw-passagedata><tw-passagedata pid="17" name="In Pond(Swimming)" tags="Death" position="1400,300" size="100,100">You take a peacefull swim in the pond, just enjoying being outside for the second time.
@@ -264,7 +264,9 @@ You bleed to death on the grass.]
 (link: &quot;Restart&quot;)[(restart:)]
 (link: &quot;End&quot;)[(gotourl: &quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="18" name="Pounce Early" tags="" position="500,1450" size="100,100">You leap out, but find that they are still about (print:(random:20,40)) feet away.
 [[Walk away in shame-&gt;Supervisor or relax]]
-[[Complete your mission-&gt;Old lady in pond]]</tw-passagedata><tw-passagedata pid="19" name="A lil&#39; bit more waiting" tags="" position="725,1450" size="100,100">You decide to </tw-passagedata><tw-passagedata pid="20" name="Supervisor or relax" tags="" position="500,1600" size="100,100">[[Go back to compound-&gt;Angry Supervisor&#39;s Office]]
+[[Complete your mission-&gt;Old lady in pond]]</tw-passagedata><tw-passagedata pid="19" name="A little bit more waiting" tags="" position="725,1450" size="100,100">You wait a little bit longer, and jump out, just as they are walking past.
+
+[[Continue-&gt;Old lady in pond]]</tw-passagedata><tw-passagedata pid="20" name="Supervisor or relax" tags="" position="500,1600" size="100,100">[[Go back to compound-&gt;Angry Supervisor&#39;s Office]]
 [[Relax in pond-&gt;In Pond(Swimming)]] </tw-passagedata><tw-passagedata pid="21" name="Old lady in pond" tags="" position="650,1600" size="100,100">One of the cats runs into the log that you were in.
 You push the old lady into the pond.
 [[Push other cat into pond-&gt;John in pond]]
@@ -311,7 +313,7 @@ or
 
 </tw-passagedata><tw-passagedata pid="33" name="DeathByGuardChanceYouWin" tags="Death" position="900,300" size="100,100">(set:_doYouWin to (random:0,69420))(if:_doYouWin is 6969)[You beat the guards and live happily ever after (how the hell did you get this? You had a one in 69420 chance of getting it!)](else:)[(text-color:red)[You die a violent and bloody death, being beaten to a pulp by the guards.]]
 (link: &quot;Restart&quot;)[(restart:)]
-(link: &quot;End&quot;)[(gotourl: &quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="34" name="Take a Swim (Day 1)" tags="" position="375,2400" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
+(link: &quot;End&quot;)[(gotourl: &quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="34" name="Take a Swim (Day 1)" tags="Swim" position="375,2400" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
 
 [[Work out-&gt;Work out (Day 2)]]
 
@@ -319,7 +321,7 @@ or
 
 [[Go to the spa-&gt;Go to the spa (Day 2)]]
 
-[[Read-&gt;Read (Day 2)]]</tw-passagedata><tw-passagedata pid="35" name="Work out (Day 1)" tags="" position="500,2275" size="100,100">(if:visits &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but still don&#39;t have enough credits for a membership.]
+[[Read-&gt;Read (Day 2)]]</tw-passagedata><tw-passagedata pid="35" name="Work out (Day 1)" tags="WorkOut" position="500,2275" size="100,100">(if:visits &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but still don&#39;t have enough credits for a membership.]
 
 [[Take a Swim-&gt;Take a Swim (Day 1)]]
 
@@ -327,7 +329,7 @@ or
 
 [[Go to the spa-&gt;Go to the spa (Day 1)]]
 
-[[Read-&gt;Read (Day 1)]]</tw-passagedata><tw-passagedata pid="36" name="Go to the spa (Day 1)" tags="" position="375,2275" size="100,100">You go to the spa, and luckily, they are having a sale, so you are able to afford it.
+[[Read-&gt;Read (Day 1)]]</tw-passagedata><tw-passagedata pid="36" name="Go to the spa (Day 1)" tags="Spa" position="375,2275" size="100,100">You go to the spa, and luckily, they are having a sale, so you are able to afford it.
 You have a great and relaxing day.
 
 [[Take a Swim-&gt;Take a Swim (Day 2)]]
@@ -338,7 +340,7 @@ You have a great and relaxing day.
 
 [[Work out-&gt;Work out (Day 2)]]
 
-</tw-passagedata><tw-passagedata pid="37" name="Read (Day 1)" tags="" position="625,2275" size="100,100">You spend the day going through your pile of books that you&#39;ve wanted to read, but not had the time to.
+</tw-passagedata><tw-passagedata pid="37" name="Read (Day 1)" tags="Read" position="625,2275" size="100,100">You spend the day going through your pile of books that you&#39;ve wanted to read, but not had the time to.
 
 [[Take a Swim-&gt;Take a Swim (Day 2)]]
 
@@ -346,7 +348,7 @@ You have a great and relaxing day.
 
 [[Read more-&gt;Read (Day 2)]]
 
-[[Go to the spa-&gt;Go to the spa (Day 2)]]</tw-passagedata><tw-passagedata pid="38" name="Read (Day 2)" tags="" position="625,2550" size="100,100">(if:(history: where its name contains &quot;Read (Day 1)&quot;)&#39;s length &gt;= 1)[You read even more books, and have a great time.](else:)[You go through your pile of books that you&#39;ve been meaning to read, but haven&#39;t had the time to.]
+[[Go to the spa-&gt;Go to the spa (Day 2)]]</tw-passagedata><tw-passagedata pid="38" name="Read (Day 2)" tags="Read" position="625,2550" size="100,100">(if:(history: where its name contains &quot;Read (Day 1)&quot;)&#39;s length &gt;= 1)[You read even more books, and have a great time.](else:)[You go through your pile of books that you&#39;ve been meaning to read, but haven&#39;t had the time to.]
 
 [[Take a Swim-&gt;Take a Swim (Day 3)]]
 
@@ -356,7 +358,7 @@ You have a great and relaxing day.
 
 [[Go to the spa-&gt;Go to the spa (Day 3)]]
 
-[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="39" name="Take a Swim (Day 2)" tags="" position="375,2675" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
+[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="39" name="Take a Swim (Day 2)" tags="Swim" position="375,2675" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
 
 [[Take a Swim-&gt;Take a Swim (Day 3)]]
 
@@ -366,16 +368,16 @@ You have a great and relaxing day.
 
 [[Go to the spa-&gt;Go to the spa (Day 3)]]
 
-[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="40" name="Read (Day 3)" tags="" position="625,2825" size="100,100">(if:(history: where its name contains &quot;Read (Day 1)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Read (Day 2)&quot;)&#39;s length &gt;= 1)[You read even more books, and have a great time.](else:)[You read even more books, and have a great time.]](else:)[You go through your pile of books that you&#39;ve been meaning to read, but haven&#39;t had the time to.]
+[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="40" name="Read (Day 3)" tags="Read" position="625,2825" size="100,100">(if:(history: where its name contains &quot;Read (Day 1)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Read (Day 2)&quot;)&#39;s length &gt;= 1)[You read even more books, and have a great time.](else:)[You read even more books, and have a great time.]](else:)[You go through your pile of books that you&#39;ve been meaning to read, but haven&#39;t had the time to.]
 
-[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="41" name="Go to the spa (Day 3)" tags="" position="375,2825" size="100,100">(if:(history: where its name contains &quot;Go to the spa (Day 2)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Go to the spa (Day 1)&quot;)&#39;s length &gt;= 1)[You try to go to the spa, but they call you greedy and kick you out.](else:)[You try to go to the spa, but they call you greedy and kick you out.]](else:)[You go to the spa, and luckily, they are having a sale, so you are able to afford it.
+[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="41" name="Go to the spa (Day 3)" tags="Spa" position="375,2825" size="100,100">(if:(history: where its name contains &quot;Go to the spa (Day 2)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Go to the spa (Day 1)&quot;)&#39;s length &gt;= 1)[You try to go to the spa, but they call you greedy and kick you out.](else:)[You try to go to the spa, but they call you greedy and kick you out.]](else:)[You go to the spa, and luckily, they are having a sale, so you are able to afford it.
 You have a great and relaxing day.]
 
-[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="42" name="Work out (Day 3)" tags="" position="500,2825" size="100,100">(if:(history: where its name contains &quot;Work out (Day 1)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Work out (Day 2)&quot;)&#39;s length &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.]You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but still don&#39;t have enough credits for a membership.]
+[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="42" name="Work out (Day 3)" tags="WorkOut" position="500,2825" size="100,100">(if:(history: where its name contains &quot;Work out (Day 1)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Work out (Day 2)&quot;)&#39;s length &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.]You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but still don&#39;t have enough credits for a membership.]
 
-[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="43" name="Take a Swim (Day 3)" tags="" position="375,2950" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
+[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="43" name="Take a Swim (Day 3)" tags="Swim" position="375,2950" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
 
-[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="44" name="Go to the spa (Day 2)" tags="" position="375,2550" size="100,100">(if:(history: where its name contains &quot;Go to the spa (Day 1)&quot;)&#39;s length &gt;= 1)[You try to go to the spa, but they call you greedy and kick you out.](else:)[You go to the spa, and luckily, they are having a sale, so you are able to afford it.
+[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="44" name="Go to the spa (Day 2)" tags="Spa" position="375,2550" size="100,100">(if:(history: where its name contains &quot;Go to the spa (Day 1)&quot;)&#39;s length &gt;= 1)[You try to go to the spa, but they call you greedy and kick you out.](else:)[You go to the spa, and luckily, they are having a sale, so you are able to afford it.
 You have a great and relaxing day.]
 
 [[Take a Swim-&gt;Take a Swim (Day 3)]]
@@ -386,17 +388,20 @@ You have a great and relaxing day.]
 
 [[Go to the spa-&gt;Go to the spa (Day 3)]]
 
-[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="45" name="Work out (Day 2)" tags="" position="500,2550" size="100,100">(if:(history: where its name contains &quot;Work out (Day 1)&quot;)&#39;s length &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but still don&#39;t have enough credits for a membership.]
+[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="45" name="Work out (Day 2)" tags="WorkOut" position="500,2550" size="100,100">(if:(history: where its name contains &quot;Work out (Day 1)&quot;)&#39;s length &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but still don&#39;t have enough credits for a membership.]
 
-[[Take a Swim-&gt;Take a Swim (Day 3)]]
-
-[[Work out-&gt;Work out (Day 3)]]
+[[Take a Swim-&gt;Take a Swim (Day 2)]]
 
 [[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
 
-[[Go to the spa-&gt;Go to the spa (Day 3)]]
+[[Go to the spa-&gt;Go to the spa (Day 2)]]
 
-[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="46" name="Supervisor&#39;s Office (Scoring)" tags="" position="500,3100" size="100,100"></tw-passagedata></tw-storydata>
+[[Read-&gt;Read (Day 2)]]</tw-passagedata><tw-passagedata pid="46" name="Supervisor&#39;s Office (Scoring)" tags="" position="500,3100" size="100,100">You get called into your Supervisor&#39;s office, where she will give you your scores.
+(set: $score to 0)(if:(history: where its name contains &quot;Old lady in pond&quot;)&#39;s length &gt;= 1)[(set: $score to $score + 3)](if:(history: where its name contains &quot;Work out&quot;)&#39;s length &gt;= 1)[(set: $score to $score to $score + 1)](if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[]
+	&quot;Hello,&quot; She says. &quot;I see here that you decided to spend your days off (if:(history: where its tags contains &quot;Read&quot;)&#39;s length is 3)[reading.](if:(history: where its tags contains &quot;Spa&quot;)&#39;s length is 3)[at the spa.](if:(history: where its name contains &quot;Swim&quot;)&#39;s length is 3)[swimming.](if:(history: where its name contains &quot;Work out&quot;)&#39;s length is 3)[going to the gym, failing to pay for the membership, and leaving.](if:(history: where its name contains &quot;Spa&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Spa&quot;)&#39;s length is &lt; 3)[at the spa, ]](if:(history: where its name contains &quot;Read&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Read&quot;)&#39;s length is &lt; 3)[reading, ]](if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &lt; 3)[trying to work out, ]](if:(history: where its name contains &quot;Swim&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Swim&quot;)&#39;s length is &lt; 3)[swimming, ]]and didn&#39;t spend any time in the physical training room!&quot;
+	&quot;I didn&#39;t know I had access to it!&quot; You say defensively. &quot;I never got a keycard or anything!(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[Also, I tried to go to the gym, but I couldn&#39;t afford it, that should count for something.]&quot;
+    &quot;You didn&#39;t?&quot; She asks, &quot;You should&#39;ve gotten one delivered, I&#39;ll have to talk to someone about that.(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[You do get bonus points for going to the gym]&quot;
+    &quot;Anyway, you got a (print: $score)</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _createForOfIteratorHelper(e,t){var n,r="undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(!r){if(Array.isArray(e)||(r=_unsupportedIterableToArray(e))||t&&e&&"number"==typeof e.length)return r&&(e=r),n=0,{s:t=function(){},n:function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}},e:function(e){throw e},f:t};throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var a,o=!0,i=!1;return{s:function(){r=r.call(e)},n:function(){var e=r.next();return o=e.done,e},e:function(e){i=!0,a=e},f:function(){try{o||null==r.return||r.return()}finally{if(i)throw a}}}}function _slicedToArray(e,t){return _arrayWithHoles(e)||_iterableToArrayLimit(e,t)||_unsupportedIterableToArray(e,t)||_nonIterableRest()}function _nonIterableRest(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _iterableToArrayLimit(e,t){var n=null==e?null:"undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null!=n){var r,a,o=[],i=!0,s=!1;try{for(n=n.call(e);!(i=(r=n.next()).done)&&(o.push(r.value),!t||o.length!==t);i=!0);}catch(e){s=!0,a=e}finally{try{i||null==n.return||n.return()}finally{if(s)throw a}}return o}}function _arrayWithHoles(e){if(Array.isArray(e))return e}function _toConsumableArray(e){return _arrayWithoutHoles(e)||_iterableToArray(e)||_unsupportedIterableToArray(e)||_nonIterableSpread()}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _unsupportedIterableToArray(e,t){if(e){if("string"==typeof e)return _arrayLikeToArray(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Map"===(n="Object"===n&&e.constructor?e.constructor.name:n)||"Set"===n?Array.from(e):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?_arrayLikeToArray(e,t):void 0}}function _iterableToArray(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}function _arrayWithoutHoles(e){if(Array.isArray(e))return _arrayLikeToArray(e)}function _arrayLikeToArray(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

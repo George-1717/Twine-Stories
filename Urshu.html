@@ -282,11 +282,12 @@ Strange, cats usually don&#39;t like water...
 (forget-undos:-1)
 (link: &quot;Restart&quot;)[(restart:)]
 (link: &quot;End&quot;)[(gotourl: &quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="23" name="Supervisor&#39;s Office (Pre-Scoring)" tags="" position="500,2000" size="100,100">You head back to your supervisor&#39;s office.
-&quot;You will receive your scores in a few days.&quot; She says, &quot;Meanwhile, please head back to your previous residence and continue your life like normal.&quot;
+(if:(history: where its name contains &quot;Helping cats and lady&quot;)&#39;s length &gt;= 1)[You stayed to help them! You traitor!
+[[Continue-&gt;Angry Supervisor&#39;s Office]]](else:)[&quot;You will receive your scores in a few days.&quot; She says, &quot;Meanwhile, please head back to your previous residence and continue your life like normal.&quot;
 
 [[Go back to your home-&gt;Connor&#39;s Home Before Scoring (Day 1 Deciding)]]
 
-[[Ask the supervisor what your scores are-&gt;Angry Supervisor&#39;s Office]] </tw-passagedata><tw-passagedata pid="24" name="Helping cats and lady" tags="" position="950,1800" size="100,100">You feel bad about knocking them into the pond and try to help them.
+[[Ask the supervisor what your scores are-&gt;Angry Supervisor&#39;s Office]]]</tw-passagedata><tw-passagedata pid="24" name="Helping cats and lady" tags="" position="950,1800" size="100,100">You feel bad about knocking them into the pond and try to help them.
 [[Help the old lady-&gt;Helping old lady in pond]]
 [[Help the cat in the pond-&gt;Helping John in pond]]
 [[Tell the cat in the log what happened-&gt;In log with Urshu]]</tw-passagedata><tw-passagedata pid="25" name="Helping old lady in pond" tags="" position="800,1950" size="100,100">You jump in after the old lady, but when you dive down, you can&#39;t find her.
@@ -298,13 +299,30 @@ I wonder why...</tw-passagedata><tw-passagedata pid="27" name="In log with Urshu
 You find this especially strange because there is nothing inside of the log except you two.
 [[Tell the cat what you did-&gt;Telling Urshu what you did]]
 [[Kill the cat-&gt;Killing Urshu]]
-[[Lie to the cat about what happened-&gt;Lying to Urshu about what happened]]</tw-passagedata><tw-passagedata pid="28" name="Telling Urshu what you did" tags="" position="1175,2100" size="100,100">You tell the cat what happened, and tell them that you feel bad about it.</tw-passagedata><tw-passagedata pid="29" name="Killing Urshu" tags="" position="1300,2100" size="100,100">You start towards the cat, but they push you back out of the log, and you roll into the pond.
+[[Lie to the cat about what happened-&gt;Lying to Urshu about what happened]]</tw-passagedata><tw-passagedata pid="28" name="Telling Urshu what you did" tags="" position="1175,2100" size="100,100">You tell the cat what happened, and tell them that you feel bad about it.
+
+&quot;Go help them then!&quot; The cat shouts.
+&quot;Ok, I will!&quot; You shout, wondering why you even chose to talk to the cat.
+
+[[Help the cat get out of the pond-&gt;Helping John in pond]] 
+
+[[Help old lady get out of the pond-&gt;Helping old lady in pond]] </tw-passagedata><tw-passagedata pid="29" name="Killing Urshu" tags="" position="1300,2100" size="100,100">You start towards the cat, but they push you out of the log, and you roll uncontrollably into the pond.
 
 [[Swim to the surface-&gt;Helping cats and lady]] 
-or
+
 [[Find the old lady-&gt;Helping old lady in pond]] 
-or
-[[Find the other cat-&gt;Helping John in pond]] </tw-passagedata><tw-passagedata pid="30" name="Lying to Urshu about what happened" tags="" position="1425,2100" size="100,100">You talk to Urshu about what happened.</tw-passagedata><tw-passagedata pid="31" name="Connor&#39;s Home Before Scoring (Day 1 Deciding)" tags="" position="500,2125" size="100,100">You go back to your small apartment. Everyone you talk to says that scores are usually finished about three days after your task is done, so you have three whole days to do whatever you want!
+
+[[Find the other cat-&gt;Helping John in pond]]
+
+[[Give up-&gt;Supervisor&#39;s Office (Pre-Scoring)]]</tw-passagedata><tw-passagedata pid="30" name="Lying to Urshu about what happened" tags="" position="1425,2100" size="100,100">You talk to Urshu about what happened. Instead of telling the truth, you tell him that you were watching from afar as they fell in, and ran to their rescue when you saw them fall in.
+
+&quot;You liar!&quot; He says, &quot;I saw you push the old lady into the pond, and John jump in after her! Get out of here, and go back to your &#39;dogs facility&#39; or whatever you call it.&quot;
+
+&quot;I can&#39;t though, me staying here after my mission is complete means that I&#39;ll either be killed upon arrival or banished.&quot;
+
+&quot;You&#39;re still a liar, come back when you&#39;ve changed.&quot;
+
+[[Go away until you believe you&#39;ve changed-&gt;Becoming a hermit]]</tw-passagedata><tw-passagedata pid="31" name="Connor&#39;s Home Before Scoring (Day 1 Deciding)" tags="" position="500,2125" size="100,100">You go back to your small apartment. Everyone you talk to says that scores are usually finished about three days after your task is done, so you have three whole days to do whatever you want!
 
 [[Take a Swim-&gt;Take a Swim (Day 1)]]
 
@@ -406,7 +424,7 @@ You have a great and relaxing day.]
 	&quot;Hello,&quot; She says. &quot;I see here that you decided to spend your days off (if:(history: where its tags contains &quot;Read&quot;)&#39;s length is 3)[reading.](if:(history: where its tags contains &quot;Spa&quot;)&#39;s length is 3)[at the spa.](if:(history: where its name contains &quot;Swim&quot;)&#39;s length is 3)[swimming.](if:(history: where its name contains &quot;Work out&quot;)&#39;s length is 3)[going to the gym, failing to pay for the membership, and leaving.](if:(history: where its name contains &quot;Spa&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Spa&quot;)&#39;s length is &lt; 3)[at the spa, ]](if:(history: where its name contains &quot;Read&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Read&quot;)&#39;s length is &lt; 3)[reading, ]](if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &lt; 3)[trying to work out, ]](if:(history: where its name contains &quot;Swim&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Swim&quot;)&#39;s length is &lt; 3)[swimming, ]]and didn&#39;t spend any time in the physical training room!&quot;
 	&quot;I didn&#39;t know I had access to it!&quot; You say defensively. &quot;I never got a keycard or anything!(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[Also, I tried to go to the gym, but I couldn&#39;t afford it, that should count for something.]&quot;
     &quot;You didn&#39;t?&quot; She asks, &quot;You should&#39;ve gotten one delivered, I&#39;ll have to talk to someone about that.(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[You do get bonus points for going to the gym]&quot;
-    &quot;Anyway, you got a (print: $score)</tw-passagedata></tw-storydata>
+    &quot;Anyway, you got a (print: $score)</tw-passagedata><tw-passagedata pid="46" name="Becoming a hermit" tags="" position="1700,2100" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _createForOfIteratorHelper(e,t){var n,r="undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(!r){if(Array.isArray(e)||(r=_unsupportedIterableToArray(e))||t&&e&&"number"==typeof e.length)return r&&(e=r),n=0,{s:t=function(){},n:function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}},e:function(e){throw e},f:t};throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var a,o=!0,i=!1;return{s:function(){r=r.call(e)},n:function(){var e=r.next();return o=e.done,e},e:function(e){i=!0,a=e},f:function(){try{o||null==r.return||r.return()}finally{if(i)throw a}}}}function _slicedToArray(e,t){return _arrayWithHoles(e)||_iterableToArrayLimit(e,t)||_unsupportedIterableToArray(e,t)||_nonIterableRest()}function _nonIterableRest(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _iterableToArrayLimit(e,t){var n=null==e?null:"undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null!=n){var r,a,o=[],i=!0,s=!1;try{for(n=n.call(e);!(i=(r=n.next()).done)&&(o.push(r.value),!t||o.length!==t);i=!0);}catch(e){s=!0,a=e}finally{try{i||null==n.return||n.return()}finally{if(s)throw a}}return o}}function _arrayWithHoles(e){if(Array.isArray(e))return e}function _toConsumableArray(e){return _arrayWithoutHoles(e)||_iterableToArray(e)||_unsupportedIterableToArray(e)||_nonIterableSpread()}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _unsupportedIterableToArray(e,t){if(e){if("string"==typeof e)return _arrayLikeToArray(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Map"===(n="Object"===n&&e.constructor?e.constructor.name:n)||"Set"===n?Array.from(e):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?_arrayLikeToArray(e,t):void 0}}function _iterableToArray(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}function _arrayWithoutHoles(e){if(Array.isArray(e))return _arrayLikeToArray(e)}function _arrayLikeToArray(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

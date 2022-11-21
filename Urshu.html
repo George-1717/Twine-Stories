@@ -9,8 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Urshu.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Urshu" startnode="13" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="EE9C582F-9062-4B8A-B48D-CA7405221F40" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
-/* 
+<tw-storydata name="Urshu" startnode="13" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="EE9C582F-9062-4B8A-B48D-CA7405221F40" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* 
 	Twine CSS Template
 	
 	Simple CSS Template to help Twine authors change 
@@ -67,7 +66,7 @@ tw-passage {
 		
 		It's ok to experiment with making this smaller or larger
 	*/
-    max-width: 55em;
+    max-width: 80em;
 	/* This centers the main story column in the window */
     margin: 0 auto 0 auto;
 }
@@ -81,10 +80,10 @@ tw-sidebar {
 		higher for more rounded colors.
 		
 	*/
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 
 	/* Uncomment to hide the sidebar completely */
-	/* display: none; */ 
+	display: none;
 }
 
 /*
@@ -102,19 +101,19 @@ tw-sidebar {
 	   - How much blur does the glow/shadow have
 	   - What color is the shadow
 	*/
-	text-shadow: 0 0 5px #cb4b16;
+	text-shadow: 0 0 1px #cb4b16;
 }
 /* Links that have already been visited */
 .enchantment-link:visited, tw-link:visited, .enchantment-link.visited, tw-link.visited, a:visited {
 	color: #268bd2; 
 	font-weight: bold; 
-	text-shadow: 0 0 5px #268bd2;
+	text-shadow: 0 0 0px #268bd2;
 }
 /* Links when the mouse is over them */
 .enchantment-link:hover, tw-link:hover, a:hover {
 	color: #2aa198; 
 	font-weight: bold; 
-	text-shadow: 0 0 5px #2aa198;
+	text-shadow: 0 0 2px #2aa198;
 }
 
 
@@ -200,31 +199,44 @@ img.full-width {
   }  
   
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Death" color="red"></tw-tag><tw-tag name="Big-Choice" color="purple"></tw-tag><tw-passagedata pid="1" name="Supervisor&#39;s Office" tags="" position="650,475" size="100,100">“Are you ready for your first assignment?” she asks.
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Death" color="red"></tw-tag><tw-tag name="Big-Choice" color="purple"></tw-tag><tw-tag name="Hermit" color="blue"></tw-tag><tw-tag name="Random" color="purple"></tw-tag><tw-passagedata pid="1" name="Supervisor&#39;s Office" tags="" position="650,475" size="100,100">“Are you ready for your first assignment?” she asks.
 “You know very well that if I’m not that I get kicked out of the compound,” You shudder at the thought of leaving the compound, “So why bother asking?”
 “It’s required by the rules. You are not the only one that has to follow the rules, the only person who doesn’t is Elchy, and he still does. You know that” she replies, even grumpier.
 “Sorry if I offended you. I didn’t mean to, so what is my assignment?”
 “You will go out of the compound to the forest. When you get there, find the hollow log next to a pond, then hide until you hear an old lady and two cats approach. When you do, run in-between the log and the pond and knock the old lady into the pond.”
-[[Say, &quot;Why would I do that?&quot;-&gt;Angry Supervisor&#39;s Office]]
-[[Punch the supervisor-&gt;Angry Supervisor&#39;s Office]]
-[[Say, &quot;Of course!&quot;-&gt;Cave Exit]]</tw-passagedata><tw-passagedata pid="2" name="DeathByGuard" tags="Death" position="1025,300" size="100,100">(text-color:red)[You die a violent and bloody death, being beaten to a pulp by the guards.](forget-undos:-1)
 
-(link: &quot;Restart&quot;)[(restart:)]
-[[Restart-&gt;Beginning]]</tw-passagedata><tw-passagedata pid="3" name="Angry Supervisor&#39;s Office" tags="Death" position="600,625" size="100,100">The supervisor does not look happy and screams, &quot;Guards!&quot;
+[[Say, &quot;Why would I do that?&quot;|Angry Supervisor&#39;s Office]]
+
+[[Punch the supervisor|Angry Supervisor&#39;s Office]]
+
+[[Say, &quot;Of course!&quot;|Cave Exit]]</tw-passagedata><tw-passagedata pid="2" name="DeathByGuard" tags="Death" position="1025,325" size="100,100">(text-color:red)[You die a violent and bloody death, being beaten to a pulp by the guards.](forget-undos:-1)
+
+(link:&quot;Restart&quot;)[(restart:)]
+(link:&quot;End&quot;)[(gotourl:&quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="3" name="Angry Supervisor&#39;s Office" tags="Death" position="600,625" size="100,100">The supervisor does not look happy and screams, &quot;Guards!&quot;
 Three guards run into the room.(forget-undos:-1)
-(transition-depart:&quot;rumble&quot;)[[Continue-&gt;DeathByGuard]]
-(transition-depart:&quot;rumble&quot;)[[Attempt to fight them-&gt;DeathByGuardChanceYouWin]]</tw-passagedata><tw-passagedata pid="4" name="Cave Exit" tags="" position="750,625" size="100,100">A large dog stands in the way.
-(transition-depart:&quot;rumble&quot;)[[Say, &quot;Well, there is a dog in my way,&quot; and go back into the supervisor&#39;s office.-&gt;Angry Supervisor&#39;s Office]]
-[[Say, &quot;Could you please move? I have an assignment to complete.&quot;-&gt;Cave Exit 1 without dog]]</tw-passagedata><tw-passagedata pid="5" name="Outside Cave Exit 1" tags="" position="825,875" size="100,100">You step out, your paws aching, into a forest, a hatch swinging closed behind you.
+
+[[Continue|DeathByGuard]]
+
+[[Attempt to fight them|DeathByGuardChanceYouWin]]</tw-passagedata><tw-passagedata pid="4" name="Cave Exit" tags="" position="750,625" size="100,100">A large dog stands in the way.
+
+[[Say, &quot;Well, there is a dog in my way,&quot; and go back into the supervisor&#39;s office.|Angry Supervisor&#39;s Office]]
+
+[[Say, &quot;Could you please move? I have an assignment to complete.&quot;|Cave Exit 1 without dog]]</tw-passagedata><tw-passagedata pid="5" name="Outside Cave Exit 1" tags="" position="825,875" size="100,100">You step out, your paws aching, into a forest, a hatch swinging closed behind you.
 You pause for a moment, waiting for your eyes to adjust to the sunlight.
 When they finally adjust you see that you are standing on some dark green grass, just next to the mountain that you have lived in for your entire life, this being the second time that you have ever been outside.
-[[Look for path to follow-&gt;Looking For Path]]
-[[Ask a nearby bird for instructions to the pond-&gt;Bird Death]]
-[[Ask a nearby squirrel for instructions to the pond-&gt;Squirrel Helping]]</tw-passagedata><tw-passagedata pid="6" name="Cave Exit 1 without dog" tags="" position="750,750" size="100,100">As the dog moves, you see the rest of the tunnel, angled slightly upward.
+
+[[Look for path to follow|Looking For Path]]
+
+[[Ask a nearby bird for instructions to the pond|Bird Death]]
+
+[[Ask a nearby squirrel for instructions to the pond|Squirrel Helping]]</tw-passagedata><tw-passagedata pid="6" name="Cave Exit 1 without dog" tags="" position="750,750" size="100,100">As the dog moves, you see the rest of the tunnel, angled slightly upward.
 You walk upward for what feels like forever forever.
-[[Next-&gt;Outside Cave Exit 1]]</tw-passagedata><tw-passagedata pid="7" name="Looking For Path" tags="" position="750,1000" size="100,100">You look around for a while before finding a small, nearly completely overgrown path leading away from the mountain.
-[[Follow the path-&gt;Overgrown Path]]
-[[Find a different path-&gt;Cant find another path]]</tw-passagedata><tw-passagedata pid="8" name="Squirrel Helping" tags="" position="900,1000" size="100,100">&quot;Could you help me find a pond with a hollow log?&quot; You ask the Squirrel.
+
+[[Continue|Outside Cave Exit 1]]</tw-passagedata><tw-passagedata pid="7" name="Looking For Path" tags="" position="750,1000" size="100,100">You look around for a while before finding a small, nearly completely overgrown path leading away from the mountain.
+
+[[Follow the path|Overgrown Path]]
+
+[[Find a different path|Cant find another path]]</tw-passagedata><tw-passagedata pid="8" name="Squirrel Helping" tags="" position="900,1000" size="100,100">&quot;Could you help me find a pond with a hollow log?&quot; You ask the Squirrel.
 &quot;And why would I do that?&quot; It asks you with a thick country accent.
 &quot;Out of the kindness of your heart!&quot; You reply.
 &quot;What if I don&#39;t have any?&quot; It replies.
@@ -236,85 +248,112 @@ You walk upward for what feels like forever forever.
 &quot;It&#39;s kind of obvious.&quot; They say, rudely.
 ] &quot;Well, can you show me where to go?&quot;
 &quot;Sure, follow me!&quot; They say and start off, scurrying through the underbrush.
-[[Follow the squirrel-&gt;Chasing Squirrel]]
-[[Abandon the squirrel and find your own path-&gt;Looking For Path]]</tw-passagedata><tw-passagedata pid="9" name="Chasing Squirrel" tags="" position="975,1150" size="100,100">(set:_isFollowPossible to (random:1,20))(if:_isFollowPossible is 5)[You try to follow it, but it is much smaller than you are, and because of that is able to fit in places that you can&#39;t.
-[[Give up and go back to The Compound-&gt;Angry Supervisor&#39;s Office]]
-[[Go in the direction the squirrel was going-&gt;Wrong Hollow Log]]
-[[Give up and live a life of peace-&gt;In Pond(Swimming)]]](else:)[You follow it until it reaches a pond with a hollow log next to it.
+
+[[Follow the squirrel|Chasing Squirrel]]
+
+[[Abandon the squirrel and find your own path|Looking For Path]]</tw-passagedata><tw-passagedata pid="9" name="Chasing Squirrel" tags="Random" position="975,1150" size="100,100">(if:(random:1,20) is 5)[You try to follow it, but it is much smaller than you are, and because of that is able to fit in places that you can&#39;t.
+
+[[Give up and go back to The Compound|Angry Supervisor&#39;s Office]]
+
+[[Go in the direction the squirrel was going|Wrong Hollow Log]]
+
+[[Give up and live a life of peace|In Pond(Swimming)]]](else:)[You follow it until it reaches a pond with a hollow log next to it.
 &quot;This it?&quot; The squirrel asks.
 &quot;I don&#39;t know, they only told me it was hollow log next to a pond, and this matches that description.&quot;
 &quot;Then I will leave you here,&quot; He says, before quickly running away.
-(if:_isFollowPossible is 6)[[[Hide in the hollow log-&gt;Wrong Hollow Log]]](else:)[[[Hide in the hollow log-&gt;Hollow log (waiting)]]]]</tw-passagedata><tw-passagedata pid="10" name="Overgrown Path" tags="" position="675,1150" size="100,100">You follow the small path, which seems to loosly follow a small stream, until it ends.
-You look around until you see the pond that you were looking for.
-[[Walk over to the pond and hide in the hollow log-&gt;Hollow log (waiting)]]
-[[Forget your mission and take a swim-&gt;In Pond(Swimming)]]</tw-passagedata><tw-passagedata pid="11" name="Cant find another path" tags="" position="850,1150" size="100,100">You search for a long while, but can&#39;t find any other path.
-[[Follow path-&gt;Overgrown Path]]
-[[Go back into compound-&gt;Angry Supervisor&#39;s Office]]</tw-passagedata><tw-passagedata pid="12" name="Wrong Hollow Log" tags="" position="975,1300" size="100,100">(if:visit &lt; 1)[You curl up inside of the hollow log and start waiting.](else:)[You wait for what feels like an eternity, but don&#39;t see or hear anything other than a few birds arguing in the trees above you.]
 
-[[Wait-&gt;Wrong Hollow Log]](if:visits &gt;= 1 and even)[
-[[Give up-&gt;Angry Supervisor&#39;s Office]]](if:visits is an odd)[
-[[Give up and go for a swim-&gt;In Pond(Swimming)]]]</tw-passagedata><tw-passagedata pid="13" name="Beginning" tags="" position="650,325" size="100,100">“Come on, newbie!” yells your supervisor, a long-haired Affenpinscher, “Hurry up!”(forget-undos:-1)
-[[Say, &quot;Ok! I&#39;m coming.&quot;-&gt;Supervisor&#39;s Office]]
-(transition-depart:&quot;rumble&quot;)[[Say, &quot;What? No, I&#39;m leaving and you can&#39;t stop me!&quot;-&gt;DeathByGuard]]</tw-passagedata><tw-passagedata pid="14" name="Bird Death" tags="Death" position="1150,300" size="100,100">You ask the bird, &quot;Could you help me? I need to find a pond with a hollow log.&quot;
+(if:_isFollowPossible is 6)[[[Hide in the hollow log|Wrong Hollow Log]]](else:)[[[Hide in the hollow log|Hollow log (waiting)]]]]</tw-passagedata><tw-passagedata pid="10" name="Overgrown Path" tags="" position="675,1150" size="100,100">You follow the small path, which seems to loosly follow a small stream, until it ends.
+You look around until you see the pond that you were looking for.
+
+[[Walk over to the pond and hide in the hollow log|Hollow log (waiting)]]
+
+[[Forget your mission and take a swim|In Pond(Swimming)]]</tw-passagedata><tw-passagedata pid="11" name="Cant find another path" tags="" position="850,1150" size="100,100">You search for a long while, but can&#39;t find any other path.
+
+[[Follow path|Overgrown Path]]
+
+[[Go back into compound|Angry Supervisor&#39;s Office]]</tw-passagedata><tw-passagedata pid="12" name="Wrong Hollow Log" tags="" position="975,1300" size="100,100">(if:visit &lt; 1)[You curl up inside of the hollow log and start waiting.](else:)[You wait for what feels like an eternity, but don&#39;t see or hear anything other than a few birds arguing in the trees above you.]
+
+[[Wait|Wrong Hollow Log]](if:visits &gt;= 1 and even)[
+[[Give up|Angry Supervisor&#39;s Office]]](if:visits is an odd)[
+[[Give up and go for a swim|In Pond(Swimming)]]]</tw-passagedata><tw-passagedata pid="13" name="Beginning" tags="" position="650,325" size="100,100">“Come on, newbie!” yells your supervisor, a long-haired Affenpinscher, “Hurry up!”(forget-undos:-1)
+
+[[Say, &quot;Ok! I&#39;m coming.&quot;|Supervisor&#39;s Office]]
+
+[[Say, &quot;What? No, I&#39;m leaving and you can&#39;t stop me!&quot;|DeathByGuard]]</tw-passagedata><tw-passagedata pid="14" name="Bird Death" tags="Death" position="1150,325" size="100,100">You ask the bird, &quot;Could you help me? I need to find a pond with a hollow log.&quot;
 (text-color:red)[The bird seems very offended by this and pecks your limbs off.
 You bleed to death on the grass.]
-(link: &quot;Restart&quot;)[(restart:)](forget-undos:-1)
-(link: &quot;End&quot;)[(gotourl: &quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="15" name="Hollow log (waiting)" tags="" position="600,1300" size="100,100">(set: $urshucoming to (random:1,7)) (if: $urshucoming is 7)[You hear the sounds of both feet and paws.
-[[Pounce-&gt;Pounce Early]]
-[[Wait a little more-&gt;A little bit more waiting]]]
-(if:$urshucoming is not 7)[You wait quietly in the hollow log.
-[[Wait more-&gt;Hollow log (waiting)]]]
-</tw-passagedata><tw-passagedata pid="16" name="In Pond(Swimming)" tags="Death" position="1400,300" size="100,100">You take a peacefull swim in the pond, just enjoying being outside for the second time.
-(forget-undos:-1)
-(link: &quot;Restart&quot;)[(restart:)]
-(link: &quot;End&quot;)[(gotourl: &quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="17" name="Pounce Early" tags="" position="500,1450" size="100,100">You leap out, but find that they are still about (print:(random:20,40)) feet away.
-[[Walk away in shame-&gt;Supervisor or relax]]
-[[Complete your mission-&gt;Old lady in pond]]</tw-passagedata><tw-passagedata pid="18" name="A little bit more waiting" tags="" position="725,1450" size="100,100">You wait a little bit longer, and jump out, just as they are walking past.
+(link:&quot;Restart&quot;)[(restart:)](forget-undos:-1)
+(link:&quot;End&quot;)[(gotourl:&quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="15" name="Hollow log (waiting)" tags="Random" position="600,1300" size="100,100">(if: (random:1,7) is 7)[You hear the sounds of both feet and paws.
 
-[[Continue-&gt;Old lady in pond]]</tw-passagedata><tw-passagedata pid="19" name="Supervisor or relax" tags="" position="500,1600" size="100,100">[[Go back to compound-&gt;Angry Supervisor&#39;s Office]]
-[[Relax in pond-&gt;In Pond(Swimming)]] </tw-passagedata><tw-passagedata pid="20" name="Old lady in pond" tags="" position="650,1600" size="100,100">One of the cats runs into the log that you were in.
+[[Pounce|Pounce Early]]
+
+[[Wait a little more|A little bit more waiting]]](else:)[You wait quietly in the hollow log.
+
+[[Wait more|Hollow log (waiting)]]]
+</tw-passagedata><tw-passagedata pid="16" name="In Pond(Swimming)" tags="Death" position="1400,325" size="100,100">You take a peacefull swim in the pond, just enjoying being outside for the second time.
+(forget-undos:-1)
+(link:&quot;Restart&quot;)[(restart:)]
+(link:&quot;End&quot;)[(gotourl:&quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="17" name="Pounce Early" tags="Random" position="500,1450" size="100,100">You leap out, but find that they are still about (print:(random:20,40)) feet away.
+
+[[Walk away in shame|Supervisor or relax]]
+
+[[Complete your mission|Old lady in pond]]</tw-passagedata><tw-passagedata pid="18" name="A little bit more waiting" tags="" position="725,1450" size="100,100">You wait a little bit longer, and jump out, just as they are walking past.
+
+[[Continue|Old lady in pond]]</tw-passagedata><tw-passagedata pid="19" name="Supervisor or relax" tags="" position="500,1600" size="100,100">[[Go back to compound|Angry Supervisor&#39;s Office]]
+
+[[Relax in pond|In Pond(Swimming)]] </tw-passagedata><tw-passagedata pid="20" name="Old lady in pond" tags="" position="650,1600" size="100,100">One of the cats runs into the log that you were in.
 You push the old lady into the pond.
-[[Push other cat into pond-&gt;John in pond]]
-[[Kill the other cat-&gt;Death by John]]</tw-passagedata><tw-passagedata pid="21" name="John in pond" tags="Big-Choice" position="600,1750" size="100,100">You start towards him, but he jumps in before you can get to him.
+
+[[Push other cat into pond|John in pond]]
+
+[[Kill the other cat|Death by John]]</tw-passagedata><tw-passagedata pid="21" name="John in pond" tags="Big-Choice" position="600,1750" size="100,100">You start towards him, but he jumps in before you can get to him.
 Strange, cats usually don&#39;t like water...
-[[Leave-&gt;Supervisor&#39;s Office (Pre-Scoring)]]
-[[Stay and help-&gt;Helping cats and lady]]</tw-passagedata><tw-passagedata pid="22" name="Death by John" tags="Death" position="1275,300" size="100,100">You try to kill the other cat, but instead, he kills you.
+
+[[Leave|Supervisor&#39;s Office (Pre-Scoring)]]
+
+[[Stay and help|Helping cats and lady]]</tw-passagedata><tw-passagedata pid="22" name="Death by John" tags="Death" position="1275,325" size="100,100">You try to kill the other cat, but instead, he kills you.
 (forget-undos:-1)
-(link: &quot;Restart&quot;)[(restart:)]
-(link: &quot;End&quot;)[(gotourl: &quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="23" name="Supervisor&#39;s Office (Pre-Scoring)" tags="" position="500,2000" size="100,100">You head back to your supervisor&#39;s office.
+(link:&quot;Restart&quot;)[(restart:)]
+(link:&quot;End&quot;)[(gotourl:&quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="23" name="Supervisor&#39;s Office (Pre-Scoring)" tags="" position="500,2000" size="100,100">You head back to your supervisor&#39;s office.
 (if:(history: where its name contains &quot;Helping cats and lady&quot;)&#39;s length &gt;= 1)[You stayed to help them! You traitor!
-[[Continue-&gt;Angry Supervisor&#39;s Office]]](else:)[&quot;You will receive your scores in a few days.&quot; She says, &quot;Meanwhile, please head back to your previous residence and continue your life like normal.&quot;
+[[Continue|Angry Supervisor&#39;s Office]]](else:)[&quot;You will receive your scores in a few days.&quot; She says, &quot;Meanwhile, please head back to your previous residence and continue your life like normal.&quot;
 
-[[Go back to your home-&gt;Connor&#39;s Home Before Scoring (Day 1 Deciding)]]
+[[Go back to your home|Connor&#39;s Home Before Scoring (Day 1 Deciding)]]
 
-[[Ask the supervisor what your scores are-&gt;Angry Supervisor&#39;s Office]]]</tw-passagedata><tw-passagedata pid="24" name="Helping cats and lady" tags="" position="950,1800" size="100,100">You feel bad about knocking them into the pond and try to help them.
-[[Help the old lady-&gt;Helping old lady in pond]]
-[[Help the cat in the pond-&gt;Helping John in pond]]
-[[Tell the cat in the log what happened-&gt;In log with Urshu]]</tw-passagedata><tw-passagedata pid="25" name="Helping old lady in pond" tags="" position="800,1950" size="100,100">You jump in after the old lady, but when you dive down, you can&#39;t find her.
+[[Ask the supervisor what your scores are|Angry Supervisor&#39;s Office]]]</tw-passagedata><tw-passagedata pid="24" name="Helping cats and lady" tags="" position="950,1800" size="100,100">You feel bad about knocking them into the pond and try to help them.
+
+[[Help the old lady|Helping old lady in pond]]
+
+[[Help the cat in the pond|Helping John in pond]]
+
+[[Tell the cat in the log what happened|In log with Urshu]]</tw-passagedata><tw-passagedata pid="25" name="Helping old lady in pond" tags="" position="850,1950" size="100,100">You jump in after the old lady, but when you dive down, you can&#39;t find her.
 The other cat is looking for the old lady as well.</tw-passagedata><tw-passagedata pid="26" name="Helping John in pond" tags="" position="1000,1950" size="100,100">You dive into the water and find the cat looking for the old lady.
 It sees you and swims away.
 It seems to be upset with you.
 
-I wonder why...</tw-passagedata><tw-passagedata pid="27" name="In log with Urshu" tags="" position="1300,1975" size="100,100">You go back to the log and find a cat looking for something.
+I wonder why...</tw-passagedata><tw-passagedata pid="27" name="In log with Urshu" tags="" position="1400,1975" size="100,100">You go back to the log and find a cat looking for something.
 You find this especially strange because there is nothing inside of the log except you two.
-[[Tell the cat what you did-&gt;Telling Urshu what you did]]
-[[Kill the cat-&gt;Killing Urshu]]
-[[Lie to the cat about what happened-&gt;Lying to Urshu about what happened]]</tw-passagedata><tw-passagedata pid="28" name="Telling Urshu what you did" tags="" position="1175,2100" size="100,100">You tell the cat what happened, and tell them that you feel bad about it.
+
+[[Tell the cat what you did|Telling Urshu what you did]]
+
+[[Kill the cat|Killing Urshu]]
+
+[[Lie to the cat about what happened|Lying to Urshu about what happened]]</tw-passagedata><tw-passagedata pid="28" name="Telling Urshu what you did" tags="" position="1275,2100" size="100,100">You tell the cat what happened, and tell them that you feel bad about it.
 
 &quot;Go help them then!&quot; The cat shouts.
 &quot;Ok, I will!&quot; You shout, wondering why you even chose to talk to the cat.
 
-[[Help the cat get out of the pond-&gt;Helping John in pond]] 
+[[Help the cat get out of the pond|Helping John in pond]] 
 
-[[Help old lady get out of the pond-&gt;Helping old lady in pond]] </tw-passagedata><tw-passagedata pid="29" name="Killing Urshu" tags="" position="1300,2100" size="100,100">You start towards the cat, but they push you out of the log, and you roll uncontrollably into the pond.
+[[Help old lady get out of the pond|Helping old lady in pond]] </tw-passagedata><tw-passagedata pid="29" name="Killing Urshu" tags="" position="1400,2100" size="100,100">You start towards the cat, but they push you out of the log, and you roll uncontrollably into the pond.
 
-[[Swim to the surface-&gt;Helping cats and lady]] 
+[[Swim to the surface|Helping cats and lady]] 
 
-[[Find the old lady-&gt;Helping old lady in pond]] 
+[[Find the old lady|Helping old lady in pond]] 
 
-[[Find the other cat-&gt;Helping John in pond]]
+[[Find the other cat|Helping John in pond]]
 
-[[Give up-&gt;Supervisor&#39;s Office (Pre-Scoring)]]</tw-passagedata><tw-passagedata pid="30" name="Lying to Urshu about what happened" tags="" position="1425,2100" size="100,100">You talk to Urshu about what happened. Instead of telling the truth, you tell him that you were watching from afar as they fell in, and ran to their rescue when you saw them fall in.
+[[Give up|Supervisor&#39;s Office (Pre-Scoring)]]</tw-passagedata><tw-passagedata pid="30" name="Lying to Urshu about what happened" tags="" position="1525,2100" size="100,100">You talk to the cat about what happened. Instead of telling the truth, you tell him that you were watching from afar as they fell in, and ran to their rescue when you saw them fall in.
 
 &quot;You liar!&quot; He says, &quot;I saw you push the old lady into the pond, and John jump in after her! Get out of here, and go back to your &#39;dogs facility&#39; or whatever you call it.&quot;
 
@@ -322,109 +361,162 @@ You find this especially strange because there is nothing inside of the log exce
 
 &quot;You&#39;re still a liar, come back when you&#39;ve changed.&quot;
 
-[[Go away until you believe you&#39;ve changed-&gt;Becoming a hermit]]</tw-passagedata><tw-passagedata pid="31" name="Connor&#39;s Home Before Scoring (Day 1 Deciding)" tags="" position="500,2125" size="100,100">You go back to your small apartment. Everyone you talk to says that scores are usually finished about three days after your task is done, so you have three whole days to do whatever you want!
+[[Go away until you believe you&#39;ve changed|Becoming a hermit]]
 
-[[Take a Swim-&gt;Take a Swim (Day 1)]]
+[[Pester the cat even more|Death by Urshu]] </tw-passagedata><tw-passagedata pid="31" name="Connor&#39;s Home Before Scoring (Day 1 Deciding)" tags="" position="500,2125" size="100,100">You go back to your small apartment. Everyone you talk to says that scores are usually finished about three days after your task is done, so you have three whole days to do whatever you want!
 
-[[Work out-&gt;Work out (Day 1)]]
+[[Take a Swim|Take a Swim (Day 1)]]
 
-[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+[[Work out|Work out (Day 1)]]
 
-[[Go to the spa-&gt;Go to the spa (Day 1)]]
+[[Ask for scores from supervisor|Angry Supervisor&#39;s Office]] 
 
-[[Read-&gt;Read (Day 1)]]
+[[Go to the spa|Go to the spa (Day 1)]]
 
-</tw-passagedata><tw-passagedata pid="32" name="DeathByGuardChanceYouWin" tags="Death" position="900,300" size="100,100">(set:_doYouWin to (random:0,69420))(if:_doYouWin is 6969)[You beat the guards and live happily ever after (how the hell did you get this? You had a one in 69420 chance of getting it!)](else:)[(text-color:red)[You die a violent and bloody death, being beaten to a pulp by the guards.]](forget-undos:-1)
-(link: &quot;Restart&quot;)[(restart:)]
-(link: &quot;End&quot;)[(gotourl: &quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="33" name="Take a Swim (Day 1)" tags="Swim" position="375,2400" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
+[[Read|Read (Day 1)]]
 
-[[Work out-&gt;Work out (Day 2)]]
+</tw-passagedata><tw-passagedata pid="32" name="DeathByGuardChanceYouWin" tags="Death" position="900,325" size="100,100">(if:(random:0,69420) is 6969)[You beat the guards and live happily ever after (how the hell did you get this? You had a one in 69420 chance of getting it!)](else:)[(text-color:red)[You die a violent and bloody death, being beaten to a pulp by the guards.]](forget-undos:-1)
+(link:&quot;Restart&quot;)[(restart:)]
+(link:&quot;End&quot;)[(gotourl:&quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="33" name="Take a Swim (Day 1)" tags="Swim" position="375,2400" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
 
-[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+[[Work out|Work out (Day 2)]]
 
-[[Go to the spa-&gt;Go to the spa (Day 2)]]
+[[Ask for scores from supervisor|Angry Supervisor&#39;s Office]] 
 
-[[Read-&gt;Read (Day 2)]]</tw-passagedata><tw-passagedata pid="34" name="Work out (Day 1)" tags="WorkOut" position="500,2275" size="100,100">(if:visits &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but still don&#39;t have enough credits for a membership.]
+[[Go to the spa|Go to the spa (Day 2)]]
 
-[[Take a Swim-&gt;Take a Swim (Day 1)]]
+[[Read|Read (Day 2)]]</tw-passagedata><tw-passagedata pid="34" name="Work out (Day 1)" tags="WorkOut" position="500,2275" size="100,100">(if:visits &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but still don&#39;t have enough credits for a membership.]
 
-[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+[[Take a Swim|Take a Swim (Day 1)]]
 
-[[Go to the spa-&gt;Go to the spa (Day 1)]]
+[[Ask for scores from supervisor|Angry Supervisor&#39;s Office]] 
 
-[[Read-&gt;Read (Day 1)]]</tw-passagedata><tw-passagedata pid="35" name="Go to the spa (Day 1)" tags="Spa" position="375,2275" size="100,100">You go to the spa, and luckily, they are having a sale, so you are able to afford it.
+[[Go to the spa|Go to the spa (Day 1)]]
+
+[[Read|Read (Day 1)]]</tw-passagedata><tw-passagedata pid="35" name="Go to the spa (Day 1)" tags="Spa" position="375,2275" size="100,100">You go to the spa, and luckily, they are having a sale, so you are able to afford it.
 You have a great and relaxing day.
 
-[[Take a Swim-&gt;Take a Swim (Day 2)]]
+[[Take a Swim|Take a Swim (Day 2)]]
 
-[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+[[Ask for scores from supervisor|Angry Supervisor&#39;s Office]] 
 
-[[Read-&gt;Read (Day 2)]]
+[[Read|Read (Day 2)]]
 
-[[Work out-&gt;Work out (Day 2)]]
+[[Work out|Work out (Day 2)]]
 
 </tw-passagedata><tw-passagedata pid="36" name="Read (Day 1)" tags="Read" position="625,2275" size="100,100">You spend the day going through your pile of books that you&#39;ve wanted to read, but not had the time to.
 
-[[Take a Swim-&gt;Take a Swim (Day 2)]]
+[[Take a Swim|Take a Swim (Day 2)]]
 
-[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+[[Ask for scores from supervisor|Angry Supervisor&#39;s Office]] 
 
-[[Read more-&gt;Read (Day 2)]]
+[[Read more|Read (Day 2)]]
 
-[[Go to the spa-&gt;Go to the spa (Day 2)]]</tw-passagedata><tw-passagedata pid="37" name="Read (Day 2)" tags="Read" position="625,2550" size="100,100">(if:(history: where its name contains &quot;Read (Day 1)&quot;)&#39;s length &gt;= 1)[You read even more books, and have a great time.](else:)[You go through your pile of books that you&#39;ve been meaning to read, but haven&#39;t had the time to.]
+[[Go to the spa|Go to the spa (Day 2)]]</tw-passagedata><tw-passagedata pid="37" name="Read (Day 2)" tags="Read" position="625,2550" size="100,100">(if:(history: where its name contains &quot;Read (Day 1)&quot;)&#39;s length &gt;= 1)[You read even more books, and have a great time.](else:)[You go through your pile of books that you&#39;ve been meaning to read, but haven&#39;t had the time to.]
 
-[[Take a Swim-&gt;Take a Swim (Day 3)]]
+[[Take a Swim|Take a Swim (Day 3)]]
 
-[[Work out-&gt;Work out (Day 3)]]
+[[Work out|Work out (Day 3)]]
 
-[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+[[Ask for scores from supervisor|Angry Supervisor&#39;s Office]] 
 
-[[Go to the spa-&gt;Go to the spa (Day 3)]]
+[[Go to the spa|Go to the spa (Day 3)]]
 
-[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="38" name="Take a Swim (Day 2)" tags="Swim" position="375,2675" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
+[[Read|Read (Day 3)]]</tw-passagedata><tw-passagedata pid="38" name="Take a Swim (Day 2)" tags="Swim" position="375,2675" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
 
-[[Take a Swim-&gt;Take a Swim (Day 3)]]
+[[Take a Swim|Take a Swim (Day 3)]]
 
-[[Work out-&gt;Work out (Day 3)]]
+[[Work out|Work out (Day 3)]]
 
-[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+[[Ask for scores from supervisor|Angry Supervisor&#39;s Office]] 
 
-[[Go to the spa-&gt;Go to the spa (Day 3)]]
+[[Go to the spa|Go to the spa (Day 3)]]
 
-[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="39" name="Read (Day 3)" tags="Read" position="625,2825" size="100,100">(if:(history: where its name contains &quot;Read (Day 1)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Read (Day 2)&quot;)&#39;s length &gt;= 1)[You read even more books, and have a great time.](else:)[You read even more books, and have a great time.]](else:)[You go through your pile of books that you&#39;ve been meaning to read, but haven&#39;t had the time to.]
+[[Read|Read (Day 3)]]</tw-passagedata><tw-passagedata pid="39" name="Read (Day 3)" tags="Read" position="625,2825" size="100,100">(if:(history: where its name contains &quot;Read (Day 1)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Read (Day 2)&quot;)&#39;s length &gt;= 1)[You read even more books, and have a great time.](else:)[You read even more books, and have a great time.]](else:)[You go through your pile of books that you&#39;ve been meaning to read, but haven&#39;t had the time to.]
 
-[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="40" name="Go to the spa (Day 3)" tags="Spa" position="375,2825" size="100,100">(if:(history: where its name contains &quot;Go to the spa (Day 2)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Go to the spa (Day 1)&quot;)&#39;s length &gt;= 1)[You try to go to the spa, but they call you greedy and kick you out.](else:)[You try to go to the spa, but they call you greedy and kick you out.]](else:)[You go to the spa, and luckily, they are having a sale, so you are able to afford it.
+[[Continue|Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="40" name="Go to the spa (Day 3)" tags="Spa" position="375,2825" size="100,100">(if:(history: where its name contains &quot;Go to the spa (Day 2)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Go to the spa (Day 1)&quot;)&#39;s length &gt;= 1)[You try to go to the spa, but they call you greedy and kick you out.](else:)[You try to go to the spa, but they call you greedy and kick you out.]](else:)[You go to the spa, and luckily, they are having a sale, so you are able to afford it.
 You have a great and relaxing day.]
 
-[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="41" name="Work out (Day 3)" tags="WorkOut" position="500,2825" size="100,100">(if:(history: where its name contains &quot;Work out (Day 1)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Work out (Day 2)&quot;)&#39;s length &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.]You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but still don&#39;t have enough credits for a membership.]
+[[Continue|Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="41" name="Work out (Day 3)" tags="WorkOut" position="500,2825" size="100,100">(if:(history: where its name contains &quot;Work out (Day 1)&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;Work out (Day 2)&quot;)&#39;s length &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.]You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but still don&#39;t have enough credits for a membership.]
 
-[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="42" name="Take a Swim (Day 3)" tags="Swim" position="375,2950" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
+[[Continue|Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="42" name="Take a Swim (Day 3)" tags="Swim" position="375,2950" size="100,100">You swim all day in the compound&#39;s free indoor swimming pool. (if:(history: where its name contains &quot;In Pond(Swimming)&quot;)&#39;s length &gt;= 1)[It doesn&#39;t compare to the outdoor pond though.]
 
-[[Continue-&gt;Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="43" name="Go to the spa (Day 2)" tags="Spa" position="375,2550" size="100,100">(if:(history: where its name contains &quot;Go to the spa (Day 1)&quot;)&#39;s length &gt;= 1)[You try to go to the spa, but they call you greedy and kick you out.](else:)[You go to the spa, and luckily, they are having a sale, so you are able to afford it.
+[[Continue|Supervisor&#39;s Office (Scoring)]]</tw-passagedata><tw-passagedata pid="43" name="Go to the spa (Day 2)" tags="Spa" position="375,2550" size="100,100">(if:(history: where its name contains &quot;Go to the spa (Day 1)&quot;)&#39;s length &gt;= 1)[You try to go to the spa, but they call you greedy and kick you out.](else:)[You go to the spa, and luckily, they are having a sale, so you are able to afford it.
 You have a great and relaxing day.]
 
-[[Take a Swim-&gt;Take a Swim (Day 3)]]
+[[Take a Swim|Take a Swim (Day 3)]]
 
-[[Work out-&gt;Work out (Day 3)]]
+[[Work out|Work out (Day 3)]]
 
-[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+[[Ask for scores from supervisor|Angry Supervisor&#39;s Office]] 
 
-[[Go to the spa-&gt;Go to the spa (Day 3)]]
+[[Go to the spa|Go to the spa (Day 3)]]
 
-[[Read-&gt;Read (Day 3)]]</tw-passagedata><tw-passagedata pid="44" name="Work out (Day 2)" tags="WorkOut" position="500,2550" size="100,100">(if:(history: where its name contains &quot;Work out (Day 1)&quot;)&#39;s length &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but don&#39;t have enough credits for a membership.]
+[[Read|Read (Day 3)]]</tw-passagedata><tw-passagedata pid="44" name="Work out (Day 2)" tags="WorkOut" position="500,2550" size="100,100">(if:(history: where its name contains &quot;Work out (Day 1)&quot;)&#39;s length &gt;= 1)[You go to the gym, but still don&#39;t have enough credits for a membership.](else:)[You go to the gym, but don&#39;t have enough credits for a membership.]
 
-[[Take a Swim-&gt;Take a Swim (Day 2)]]
+[[Take a Swim|Take a Swim (Day 2)]]
 
-[[Ask for scores from supervisor-&gt;Angry Supervisor&#39;s Office]] 
+[[Ask for scores from supervisor|Angry Supervisor&#39;s Office]] 
 
-[[Go to the spa-&gt;Go to the spa (Day 2)]]
+[[Go to the spa|Go to the spa (Day 2)]]
 
-[[Read-&gt;Read (Day 2)]]</tw-passagedata><tw-passagedata pid="45" name="Supervisor&#39;s Office (Scoring)" tags="" position="500,3100" size="100,100">You get called into your Supervisor&#39;s office, where she will give you your scores.
+[[Read|Read (Day 2)]]</tw-passagedata><tw-passagedata pid="45" name="Supervisor&#39;s Office (Scoring)" tags="" position="500,3100" size="100,100">You get called into your Supervisor&#39;s office, where she will give you your scores.
 (set: $score to 0)(if:(history: where its name contains &quot;Old lady in pond&quot;)&#39;s length &gt;= 1)[(set: $score to $score + 3)](if:(history: where its name contains &quot;Work out&quot;)&#39;s length &gt;= 1)[(set: $score to $score + 1)](if:(history: where its name contains &quot;Wrong Hollow Log&quot;)&#39;s length is &gt;= 1)[(set: $score to $score - 1)]
 	&quot;Hello,&quot; She says. &quot;I see here that you decided to spend your days off (if:(history: where its tags contains &quot;Read&quot;)&#39;s length is 3)[reading.](if:(history: where its tags contains &quot;Spa&quot;)&#39;s length is 3)[at the spa.](if:(history: where its name contains &quot;Swim&quot;)&#39;s length is 3)[swimming.](if:(history: where its name contains &quot;Work out&quot;)&#39;s length is 3)[going to the gym, failing to pay for the membership, and leaving.](if:(history: where its name contains &quot;Spa&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Spa&quot;)&#39;s length is &lt; 3)[at the spa, ]](if:(history: where its name contains &quot;Read&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Read&quot;)&#39;s length is &lt; 3)[reading, ]](if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &lt; 3)[trying to work out, ]](if:(history: where its name contains &quot;Swim&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Swim&quot;)&#39;s length is &lt; 3)[swimming, ]]and didn&#39;t spend any time in the physical training room!&quot;
 	&quot;I didn&#39;t know I had access to it!&quot; You say defensively. &quot;I never got a keycard or anything!(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[Also, I tried to go to the gym, but I couldn&#39;t afford it, that should count for something.]&quot;
     &quot;You didn&#39;t?&quot; She asks, &quot;You should&#39;ve gotten one delivered, I&#39;ll have to talk to someone about that.(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[You do get bonus points for going to the gym]&quot;
-    &quot;Anyway, you got a (print: $score)</tw-passagedata><tw-passagedata pid="46" name="Becoming a hermit" tags="" position="1700,2100" size="100,100"></tw-passagedata></tw-storydata>
+    &quot;Anyway, you got a (print: $score)</tw-passagedata><tw-passagedata pid="46" name="Becoming a hermit" tags="Hermit" position="2000,2000" size="100,100">You walk away in shame, and build yourself a small home in an uninhabited section of the forest.
+
+[[Gather food|Gathering Food]]
+
+[[Decorate new home|Decorating New Home]]</tw-passagedata><tw-passagedata pid="47" name="Decorating New Home" tags="Hermit" position="2600,2100" size="100,100">You decide to start decorating your new house and try to find a place to get furnishings.
+
+[[Go back to Urshu|Death by Urshu]]
+
+[[Find a house to steal from|Finding a House to Steal From]]
+
+[[Ask nearby animals|Asking Nearby Animals for Furnshings]]</tw-passagedata><tw-passagedata pid="48" name="Death by Urshu" tags="Death" position="1525,325" size="100,100">You try to talk to the cat, but they get upset and kills you.
+(forget-undos:-1)
+(link:&quot;Restart&quot;)[(restart:)]
+(link:&quot;End&quot;)[(gotourl:&quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="49" name="Finding a House to Steal From" tags="Random Hermit" position="2600,2225" size="100,100">You wander around aimlessly through the forest for a while, until you stumble upon a (if:(random:1,3) &gt;= 2)[large farmhouse with a big barn next to it.
+
+[[Search the barn|Searching the Barn]]
+
+[[Search the house|Searching the House]](else:)[small wooden house the size of an ostrich egg nailed to a tree.
+You&#39;ve heard of these before, humans call them &quot;bird houses&quot;
+
+[[Try to find something|Searching the Birdhouse]]
+
+[[Give up|New home(Undecorated)]]]</tw-passagedata><tw-passagedata pid="50" name="Asking Nearby Animals for Furnshings" tags="Hermit" position="2850,2250" size="100,100">You look around for nearby animals, but find none.
+
+[[Go exploring in the hopes of finding animals who can help you|Exploring the forest to find animals]]
+
+[[Give up|New home(Undecorated)]]</tw-passagedata><tw-passagedata pid="51" name="New home(Undecorated)" tags="Hermit" position="2875,2400" size="100,100"></tw-passagedata><tw-passagedata pid="52" name="Searching the House" tags="Random Hermit" position="2300,2400" size="100,100">(if:(random:1,15) is not 7)[You try to open the front door, but it is locked.
+
+[[Try to find a window|Searching for window in house]]
+
+[[Kick the door in|Broken House Door]]](else:)[You enter the house through the front door and enter the large house.]</tw-passagedata><tw-passagedata pid="53" name="Broken House Door" tags="Hermit" position="2375,2550" size="100,100"></tw-passagedata><tw-passagedata pid="54" name="Searching the Birdhouse" tags="Hermit" position="2675,2400" size="100,100"></tw-passagedata><tw-passagedata pid="55" name="Searching the Barn" tags="Hermit" position="2525,2400" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="Searching for window in house" tags="Hermit" position="2225,2550" size="100,100"></tw-passagedata><tw-passagedata pid="57" name="Exploring the forest to find animals" tags="Hermit" position="3000,2400" size="100,100">You wander through the forest until you find a birds nest in a tree.
+
+(link:&quot;Climb Tree&quot;)[You scale the tree with ease, and when you get to the branch with the bird&#39;s nest on it, you stop and look.
+In the bird&#39;s nest, there is are a few baby birds, but no parents.
+
+[[Ask them where their parents are|They start squawking at you, but don&#39;t give any legible response.]]]
+
+(link:&quot;Explore more&quot;)[(replace:(link:&quot;Climb Tree&quot;)[You scale the tree with ease, and when you get to the branch with the bird&#39;s nest on it, you stop and look.
+In the bird&#39;s nest, there is are a few baby birds, but no parents.
+
+[[Ask them where their parents are|They start squawking at you, but don&#39;t give any legible response.]]]
+
+)[You continue walking through the ]]</tw-passagedata><tw-passagedata pid="58" name="Gathering Food" tags="" position="2000,2125" size="100,100"></tw-passagedata><tw-passagedata pid="59" name="They start squawking at you, but don&#39;t give any legible response." tags="" position="3150,2525" size="100,100">They start squawking at you, but don&#39;t give any legible response.
+
+(link:&quot;Continue&quot;)[(replace:&quot;They start squawking at you, but don&#39;t give any legible response.
+
+&quot;)[(forget-undos:-1)Suddenly, both parents dive towards you, and you instictively leap back, off the branch!
+
+[[Continue|Fall]]]]</tw-passagedata><tw-passagedata pid="60" name="Fall" tags="Death" position="1650,325" size="100,100">You fall down onto the firm dirt of the forest floor and die.
+(forget-undos:-1)
+(link:&quot;Restart&quot;)[(restart:)]
+(link:&quot;End&quot;)[(gotourl:&quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

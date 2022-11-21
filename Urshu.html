@@ -66,7 +66,7 @@ tw-passage {
 		
 		It's ok to experiment with making this smaller or larger
 	*/
-    max-width: 80em;
+    max-width: 55em;
 	/* This centers the main story column in the window */
     margin: 0 auto 0 auto;
 }
@@ -80,7 +80,7 @@ tw-sidebar {
 		higher for more rounded colors.
 		
 	*/
-	/*border-radius: 10px;*/
+	border-radius: 10px;
 
 	/* Uncomment to hide the sidebar completely */
 	display: none;
@@ -189,7 +189,7 @@ img.full-width {
   tw-story {
 	  font-size: 3.2em;
 	  width: 100%;
-	  max-width: 95%;
+	  max-width: 90%;
 	  margin: 0 auto 0 auto;
 	  padding: 20% 5%;
   }
@@ -477,11 +477,15 @@ You have a great and relaxing day.]
 [[Go to the spa|Go to the spa (Day 2)]]
 
 [[Read|Read (Day 2)]]</tw-passagedata><tw-passagedata pid="45" name="Supervisor&#39;s Office (Scoring)" tags="" position="500,3100" size="100,100">You get called into your Supervisor&#39;s office, where she will give you your scores.
-(set: $score to 0)(if:(history: where its name contains &quot;Old lady in pond&quot;)&#39;s length &gt;= 1)[(set: $score to $score + 3)](if:(history: where its name contains &quot;Work out&quot;)&#39;s length &gt;= 1)[(set: $score to $score + 1)](if:(history: where its name contains &quot;Wrong Hollow Log&quot;)&#39;s length is &gt;= 1)[(set: $score to $score - 1)]
-	&quot;Hello,&quot; She says. &quot;I see here that you decided to spend your days off (if:(history: where its tags contains &quot;Read&quot;)&#39;s length is 3)[reading.](if:(history: where its tags contains &quot;Spa&quot;)&#39;s length is 3)[at the spa.](if:(history: where its name contains &quot;Swim&quot;)&#39;s length is 3)[swimming.](if:(history: where its name contains &quot;Work out&quot;)&#39;s length is 3)[going to the gym, failing to pay for the membership, and leaving.](if:(history: where its name contains &quot;Spa&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Spa&quot;)&#39;s length is &lt; 3)[at the spa, ]](if:(history: where its name contains &quot;Read&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Read&quot;)&#39;s length is &lt; 3)[reading, ]](if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &lt; 3)[trying to work out, ]](if:(history: where its name contains &quot;Swim&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Swim&quot;)&#39;s length is &lt; 3)[swimming, ]]and didn&#39;t spend any time in the physical training room!&quot;
-	&quot;I didn&#39;t know I had access to it!&quot; You say defensively. &quot;I never got a keycard or anything!(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[Also, I tried to go to the gym, but I couldn&#39;t afford it, that should count for something.]&quot;
-    &quot;You didn&#39;t?&quot; She asks, &quot;You should&#39;ve gotten one delivered, I&#39;ll have to talk to someone about that.(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[You do get bonus points for going to the gym]&quot;
-    &quot;Anyway, you got a (print: $score)</tw-passagedata><tw-passagedata pid="46" name="Becoming a hermit" tags="Hermit" position="2000,2000" size="100,100">You walk away in shame, and build yourself a small home in an uninhabited section of the forest.
+(set: $score to 0)(if:(history: where its name contains &quot;Old lady in pond&quot;)&#39;s length &gt;= 1)[(set: $score to $score + 3)](if:(history: where its name contains &quot;Work out&quot;)&#39;s length &gt;= 1)[(set: $score to $score + 1)](if:(history: where its name contains &quot;Wrong Hollow Log&quot;)&#39;s length is &gt;= 1)[(set: $score to $score - 1)](if:(history: where its name contains &quot;A little bit more waiting&quot;)&#39;s length &gt;=1)[(set: $score to $score + 1)]
+	&quot;Hello,&quot; She says. &quot;I see here that you decided to spend your days off (if:(history: where its tags contains &quot;Read&quot;)&#39;s length is 3)[reading, ](if:(history: where its tags contains &quot;Spa&quot;)&#39;s length is 3)[at the spa, ](if:(history: where its name contains &quot;Swim&quot;)&#39;s length is 3)[swimming, ](if:(history: where its name contains &quot;Work out&quot;)&#39;s length is 3)[going to the gym, failing to pay for the membership, and leaving, ](if:(history: where its name contains &quot;Spa&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Spa&quot;)&#39;s length is &lt; 3)[at the spa, ]](if:(history: where its name contains &quot;Read&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Read&quot;)&#39;s length is &lt; 3)[reading, ]](if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &lt; 3)[trying to work out, ]](if:(history: where its name contains &quot;Swim&quot;)&#39;s length is &gt;= 1)[(if:(history: where its name contains &quot;Swim&quot;)&#39;s length is &lt; 3)[swimming, ]]and didn&#39;t spend any time in the physical training room!&quot;
+	&quot;I didn&#39;t know I had access to it!&quot; You say defensively. &quot;I never got a keycard or anything!&quot;
+    &quot;You didn&#39;t?&quot; She asks, &quot;You should&#39;ve gotten one delivered, I&#39;ll have to talk to someone about that.(if:(history: where its name contains &quot;Work out&quot;)&#39;s length is &gt;= 1)[
+    &quot;Also, I tried to go to the gym, but I couldn&#39;t afford it, that should count for something, right?&quot;
+    &quot;You do get bonus points for going to the gym!&quot;
+    &quot;Anyway, you got a (print: $score),&quot; she says.](else:)[ Anyway, you got a (print: $score).&quot;]
+    &quot;Is that good?&quot; You ask.
+    (if: $score &gt;= 4)[It&#39;s decent.](else:)[Very bad]</tw-passagedata><tw-passagedata pid="46" name="Becoming a hermit" tags="Hermit" position="2000,2000" size="100,100">You walk away in shame, and build yourself a small home in an uninhabited section of the forest.
 
 [[Gather food|Gathering Food]]
 
@@ -533,6 +537,8 @@ In the bird&#39;s nest, there is are a few baby birds, but no parents.
 (forget-undos:-1)
 (link:&quot;Restart&quot;)[(restart:)]
 (link:&quot;End&quot;)[(gotourl:&quot;https://youtu.be/0ETxWpPmduk&quot;)]</tw-passagedata><tw-passagedata pid="61" name="Footer" tags="footer" position="100,300" size="100,100">
+
+
 
 
 ©George1717 2022</tw-passagedata><tw-passagedata pid="62" name="hal.tracks" tags="" position="300,300" size="100,100">fractalsofnature: .audio/Posy-AdventuresintheDark/01-Fractals of Nature.mp3, .audio/Posy-AdventuresintheDark/01-FractalsofNature.ogg
